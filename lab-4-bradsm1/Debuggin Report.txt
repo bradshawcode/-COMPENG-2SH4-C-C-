@@ -1,0 +1,9 @@
+Copy Function Debugging Report:
+The function had bugs at lines 212, 219.
+The bug at 212 was that the copy matrix was not being set to the current size of the matrix being copied.
+it instead was defaulting to the 3x3 matrix.
+The bug at 219 was that the elements being set were being placed in the wrong location.
+The row was being set to the column, and the column was being set to the row.
+The proper setting is [row][column], row, column. Not [column][row], column, row.
+
+Thanks.
